@@ -288,3 +288,34 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: 35
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1472)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2022-06-28 13:07:57.234
+!MESSAGE Full project indexing required:
+  [+] C:\JavaProgramming\jdk1.8.0_65\jre\lib\charsets.jar
+  [+] C:\JavaProgramming\jdk1.8.0_65\jre\lib\ext\access-bridge-32.jar
+  [+] C:\JavaProgramming\jdk1.8.0_65\jre\lib\ext\cldrdata.jar
+  [+] C:\JavaProgramming\jdk1.8.0_65\jre\lib\ext\dnsns.jar
+  [+] C:\JavaProgramming\jdk1.8.0_65\jre\lib\ext\jaccess.jar
+  [+] C:\JavaProgramming\jdk1.8.0_65\jre\lib\ext\jfxrt.jar
+  [+] C:\JavaProgramming\jdk1.8.0_65\jre\lib\ext\localedata.jar
+  [+] C:\JavaProgramming\jdk1.8.0_65\jre\lib\ext\nashorn.jar
+  [+] C:\JavaProgramming\jdk1.8.0_65\jre\lib\ext\sunec.jar
+  [+] C:\JavaProgramming\jdk1.8.0_65\jre\lib\ext\sunjce_provider.jar
+  [+] C:\JavaProgramming\jdk1.8.0_65\jre\lib\ext\sunmscapi.jar
+  [+] C:\JavaProgramming\jdk1.8.0_65\jre\lib\ext\sunpkcs11.jar
+  [+] C:\JavaProgramming\jdk1.8.0_65\jre\lib\ext\zipfs.jar
+  [+] C:\JavaProgramming\jdk1.8.0_65\jre\lib\jce.jar
+  [+] C:\JavaProgramming\jdk1.8.0_65\jre\lib\jfr.jar
+  [+] C:\JavaProgramming\jdk1.8.0_65\jre\lib\jsse.jar
+  [+] C:\JavaProgramming\jdk1.8.0_65\jre\lib\resources.jar
+  [+] C:\JavaProgramming\jdk1.8.0_65\jre\lib\rt.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
