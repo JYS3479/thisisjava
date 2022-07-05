@@ -16,7 +16,7 @@ public class StringEqualsExample {
 		
 		String strVar3 = new String("정유석");
 		String strVar4 = new String("정유석");
-		if(strVar1 == strVar2) {
+		if(strVar3 == strVar4) {
 			System.out.println("strVar3과 strVar4는 참조가 같음");
 		} else {
 			System.out.println("strVar3과 strVar4는 참조가 다름");
