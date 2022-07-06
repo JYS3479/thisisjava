@@ -1,6 +1,6 @@
 package sec07.exam01_enum;
 
-import java.util.Calendar; // 컨+ 쉬+ o
+import java.util.Calendar; // 컨트롤+ 쉬프트+ 'o'
 
 public class EnumWeekExample {
 
