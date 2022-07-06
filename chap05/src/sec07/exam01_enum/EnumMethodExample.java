@@ -21,16 +21,16 @@ public class EnumMethodExample {
 		System.out.println(result2);
 		
 		//valueOf() 메소드 [동일한]  문자열비교
-		/*Week weekDay = Week.valueOf("SUNDAY");
+		Week weekDay = Week.valueOf("SUNDAY");
 		if (weekDay==Week.SUNDAY || weekDay == Week.SUNDAY) {
 			System.out.println("주말 이군요.");
 			
 		} else {
 			System.out.println("평일 이군요");
 
-		}*/
+		}
 		
-		if(args.length == 1) {
+		/*if(args.length == 1) {
 			String strDay = args[0];
 			Week weekDay = Week.valueOf(strDay);
 			if (weekDay ==Week.SATURDAY || weekDay == Week.SUNDAY) {
@@ -39,9 +39,9 @@ public class EnumMethodExample {
 			} else {
 				System.out.println("평일 이군요");
 			}
-		}
+		}*/
 		
-		//values 메소드
+		//values() 메소드  [for문
 		Week[] days = Week.values();
 		for(Week day : days) {
 			System.out.println(day);
